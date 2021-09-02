@@ -229,13 +229,11 @@ uint8_t qn8035_tuner_scan(ScanDirection direction)
         // Fix: In some cases we notice receiver jump to 85MHz/111MHz if scanner goes beyond 98.25MHz or 98.4MHz.
         if((newFreq < FREQ_TO_WORD(LOW_FREQ)) && (currentFreq > FREQ_TO_WORD(LOW_FREQ)) && (currentFreq < FREQ_TO_WORD(98.3)))
         {
-            printf("CCC\n");
             newFreq = FREQ_TO_WORD(98.4);
             freqFix = 1;
         }
         else if((newFreq > FREQ_TO_WORD(HIGH_FREQ)) && (currentFreq > FREQ_TO_WORD(98.3)) && (currentFreq < FREQ_TO_WORD(HIGH_FREQ)))
         {
-            printf("DDD\n");
             newFreq = FREQ_TO_WORD(98.2);
             freqFix = 1;
         }
