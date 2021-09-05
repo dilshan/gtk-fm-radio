@@ -13,4 +13,4 @@ The tuner application provided in this release supports the following features:
 
 The QN8035 driver base on [github.com/dilshan/qn8035-rpi-fm-radio](https://github.com/dilshan/qn8035-rpi-fm-radio), and it uses the *[WiringPi](http://wiringpi.com/)* library to communicate with the tuner.
 
-The GTK FM Radio is released under the terms of the MIT License.
+The GTK FM Radio is released under the terms of the [MIT License](LICENSE).
